@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/corevo/info.js#readme",
   "bin": {
-    "filejs": "cli.js"
+    "filejs": "lib/cli.js"
   },
   "devDependencies": {
     "babel-cli": "^6.3.15",
