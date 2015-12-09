@@ -7,15 +7,16 @@ const resolvers = {
     }
 }
 
-function match(ext) {
-    let resolver = Object.keys(resolvers).find(resolver => {
-        if (resolver.types.indexOf(ext)) {
+export default function match(ext) {
+    let typeResolver = resolvers[Object.keys(resolvers).find(resolver => {
+        if (resolvers[resolver].types.indexOf(ext) !== -1) {
             return true;
         }
-    });
+        return false;
+    })];
 
-    if (resolver) {
-        return resolver.resolver;
+    if (typeResolver) {
+        return typeResolver.resolver;
     } else {
         return new Error('No resolver was found for file type ' + ext);
     }
