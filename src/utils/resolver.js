@@ -1,11 +1,4 @@
-import docsResolver from 'ochre-liberator';
-
-const resolvers = {
-    docs: {
-        resolver: docsResolver,
-        types: ['doc', 'docx', 'txt', 'rtf', 'ppt', 'pptx', 'xls', 'xlsx']
-    }
-}
+const resolvers = require('require-all')(__dirname + '/resolvers');
 
 function match(ext, cb) {
     let typeResolver = resolvers[Object.keys(resolvers).find(resolver => {
