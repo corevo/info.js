@@ -34,6 +34,7 @@
     "babel-preset-stage-0": "^6.3.13"
   },
   "dependencies": {
-    "ochre-liberator": "^0.1.0"
+    "ochre-liberator": "^0.1.0",
+    "require-all": "^2.0.0"
   }
 }
