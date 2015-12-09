@@ -1,8 +1,8 @@
 {
   "name": "info.js",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "get file information and metadata",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "babel -d lib/ src/",
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/corevo/info.js#readme",
   "bin": {
-    "filejs": "lib/cli.js"
+    "infojs": "./lib/cli.js"
   },
   "devDependencies": {
     "babel-cli": "^6.3.15",
