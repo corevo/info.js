@@ -37,13 +37,7 @@ export default function resolve(file, cb) {
         if (err) {
             cb(err);
         } else {
-            resolver.resolve(file, (error, contents) => {
-                if (error) {
-                    cb(err);
-                } else {
-                    cb(undefined, contents);
-                }
-            });
+            cb(undefined, resolver.resolve);
         }
     });
 }
