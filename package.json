@@ -1,0 +1,25 @@
+{
+  "name": "info.js",
+  "version": "1.0.0",
+  "description": "get file information and metadata",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corevo/info.js.git"
+  },
+  "keywords": [
+    "file",
+    "documents",
+    "description",
+    "information"
+  ],
+  "author": "corevo",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/corevo/info.js/issues"
+  },
+  "homepage": "https://github.com/corevo/info.js#readme"
+}
