@@ -8,5 +8,5 @@ function getDocInfo(file, cb) {
 
 module.exports = {
     resolve: getDocInfo,
-    types: ['.doc', '.docx', '.txt', '.rtf', '.ppt', '.pptx', '.xls', '.xlsx']
+    types: ['.doc', '.docx', '.txt', '.rtf', '.ppt', '.pptx', '.xls', '.xlsx', '.pdf']
 };
