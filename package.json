@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/corevo/info.js/issues"
   },
-  "homepage": "https://github.com/corevo/info.js#readme"
+  "homepage": "https://github.com/corevo/info.js#readme",
+  "bin": {
+      "filejs": "cli.js"
+  }
 }
