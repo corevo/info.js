@@ -15,18 +15,8 @@ function match(ext, cb) {
     cb(error, typeResolver);
 }
 
-function getExtention(file) {
-    let lastDot = file.lastIndexOf('.');
-
-    if (lastDot === -1) {
-        return '';
-    } else {
-        return file.substr(lastDot + 1);
-    }
-}
-
-export default function resolve(file, cb) {
-    match(getExtention(file), (err, resolver) => {
+export default function resolve(file, ext, cb) {
+    match(ext, (err, resolver) => {
         if (err) {
             cb(err);
         } else {
