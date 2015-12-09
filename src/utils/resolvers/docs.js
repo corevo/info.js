@@ -1,6 +1,6 @@
-import docsResolver from 'ochre-liberator';
+import { getFileContents } from 'ochre-liberator';
 
 module.exports = {
-    resolve: docsResolver.getFileContents,
+    resolve: getFileContents,
     types: ['doc', 'docx', 'txt', 'rtf', 'ppt', 'pptx', 'xls', 'xlsx']
 };
